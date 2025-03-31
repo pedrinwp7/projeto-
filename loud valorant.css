@@ -2,6 +2,26 @@ body {
     color: white;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 25px;
 }
 
 ul {
@@ -16,6 +36,12 @@ a {
     color: green;
     text-decoration: none;
 }
+
+a:hover{
+   color: chartreuse;
+   transition: 0.3s all;
+}
+
 
 .center {
     text-align: center;

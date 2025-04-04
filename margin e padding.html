@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercitando margin e padding</title>
+    <style>
+
+        #título-principal{
+        color: white;
+        }
+
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(fundo-da-pág.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        .caixa1{
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 100px;
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+
+        .caixa2{
+            background-color: thistle;
+            margin-top: 50px;
+            margin-right: 51px;
+            margin-bottom: 15px;
+            margin-left: 35px;
+            padding: 150px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 50%;
+
+        }
+
+        .exibicao-block{
+            display: block;
+            background-color: #aed581;
+            margin-bottom: 10px;
+        }
+
+        .exibicao-inline{
+            display: inline;
+            background-color: aqua;
+            margin-right: 10px;
+            color: white;
+        }
+
+        .exibicao-inline-block{
+            display: inline-block;
+            background-color: #ffd54f;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+
+        }
+
+        .overflow-visible{
+            color: white;
+            width: 400px;
+            height: 120px;
+            background-color: blue;
+            margin-bottom: 10px;
+            overflow: visible;
+        }
+
+        .overflow-hidden{
+            color: white;
+            width: 400px;
+            height: 120px;
+            background-color: aqua;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .overflow-scroll{
+            color: white;
+            width: 400px;
+            height: 120px;
+            background-color: cadetblue;
+            margin-bottom: 10px;
+            overflow: scroll;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header id="título-principal"> 
+        <h1> Exemplo: margin e padding </h1> 
+    </header>
+
+    <div class="caixa1">
+        Esta div tem margin: <strong> 20px </strong> em todos os lados.
+    </div>
+
+    <div class="caixa2">
+        Esta DIV tem <strong> margin diferenciada </strong> em cada lado.
+    </div>
+
+  <div class="exibicao-block">
+
+        block block block block
+
+  </div>
+
+  <div class="exibicao-inline">
+    
+        inline1 inline2 inline3
+    
+  </div>
+
+  <div class="exibicao-inline-block">
+   
+        inline-block1 inline-block2
+    
+  </div>
+
+  <Div class="overflow-visible">
+    <h1>Exemplo com Overflow-visible:</h1>
+   <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae et amet commodi assumenda eaque quas ab aperiam obcaecati minima neque quia inventore accusantium, tenetur dolores nemo fugiat ad, aliquam sit? </p>
+  </Div> 
+
+  <Div class="overflow-hidden">
+    <h1>Exemplo com Overflow-hidden:</h1>
+   <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae et amet commodi assumenda eaque quas ab aperiam obcaecati minima neque quia inventore accusantium, tenetur dolores nemo fugiat ad, aliquam sit? </p>
+  </Div>
+
+  <Div class="overflow-scroll">
+    <h1>Exemplo com Overflow-scroll:</h1>
+  <p>  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae et amet commodi assumenda eaque quas ab aperiam obcaecati minima neque quia inventore accusantium, tenetur dolores nemo fugiat ad, aliquam sit? </p>
+  </Div>
+
+
+  <h1>Exemplo: top,right,bottom,left</h1>
+  <div class="container">
+    <div class="caixa3"> Caixa 3 (top, left)</div>
+    <div class="caixa4"> Caixa 4 (bottom, right)</div>
+  </div>
+</body>
+</html>

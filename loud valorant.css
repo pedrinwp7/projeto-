@@ -2,11 +2,11 @@ body {
     color: white;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
+    margin: 0 auto; /* cria uma margem totalmente proporcional, automaticamente. */
     padding: 15px;
 }
 
-header{
+header{ /* serve para criar uma DIV apenas para o cabeçalho do site */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,20 +34,20 @@ ul {
 
 a {
     color: green;
-    text-decoration: none;
+    text-decoration: none; /* remove o underline dos links */
 }
 
-a:hover{
-   color: chartreuse;
-   transition: 0.3s all;
+a:hover{ /* responsável por deixar o link brilhando quando o mouse passa em cima */
+   color: chartreuse; /* altera a cor que vai brilhar */
+   transition: 0.3s all; /* tempo de transição entre todos os elementos presentes no conteúdo */
 }
 
 
 .center {
-    text-align: center;
+    text-align: center; /* centraliza os elementos dentro do conteúdo */
 }
 
 .icon-loud-header{
-    display: inline;
+    display: inline; /* mantém os elemntos adicionas em linha */
     
 }

@@ -12,11 +12,10 @@
 
         body{
             text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url(fundo-da-pág.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: white;
+            font-family: Arial, Helvetica, sans-serif; /* modifica a fonte dos elementos */
+            background-image: url(fundo-da-pág.png); /* adiciona uma imagem de fundo para o site ou conteúdo */
+            background-repeat: no-repeat; /* faz com que a imagem não se repita na tela */
+            background-size: cover; /* faz com que a imagem preencha todos os pixels da tela */
         }
 
         .caixa1{
@@ -25,37 +24,36 @@
             padding: 100px;
             text-align: center;
             border: 2px solid blue;
-            border-radius: 10px;
+            border-radius: 10px; /* arredonda a ponta das bordas */
         }
 
         .caixa2{
             background-color: thistle;
-            margin-top: 50px;
-            margin-right: 51px;
-            margin-bottom: 15px;
-            margin-left: 35px;
+            margin-top: 50px; /* margem para cima */
+            margin-right: 51px; /* margem para a direita */
+            margin-bottom: 15px; /* margem para baixo */
+            margin-left: 35px; /* margem para a esquerda */
             padding: 150px;
             text-align: center;
-            border: 2px solid black;
-            border-radius: 50%;
-
+            border: 2px solid black; /* cria uma borda envolta aos elementos */
+            border-radius: 50%; /* deixa a borda redonda, oval-horizontalmente */
         }
 
         .exibicao-block{
-            display: block;
+            display: block; /* faz com que cada elemento da lista ocupe uma linha diferente, por isso ficam um abaixo do outro */
             background-color: #aed581;
             margin-bottom: 10px;
         }
 
         .exibicao-inline{
-            display: inline;
+            display: inline; /* alinha os elementos em linha */
             background-color: aqua;
-            margin-right: 10px;
+            margin-right: 10px; /* cria uma margem para a direita */
             color: white;
         }
 
         .exibicao-inline-block{
-            display: inline-block;
+            display: inline-block; /* alinha os elementos em um bloco - como um cubo. ( tendo largura e altura ) */
             background-color: #ffd54f;
             width: 100px;
             height: 50px;
@@ -69,7 +67,7 @@
             height: 120px;
             background-color: blue;
             margin-bottom: 10px;
-            overflow: visible;
+            overflow: visible; /* caixa que deixa o conteúdo dela ultrapassar os limites designados */
         }
 
         .overflow-hidden{
@@ -78,17 +76,38 @@
             height: 120px;
             background-color: aqua;
             margin-bottom: 10px;
-            overflow: hidden;
+            overflow: hidden; /* caixa que esconde o conteúdo dentro dela */
         }
 
         .overflow-scroll{
             color: white;
-            width: 400px;
-            height: 120px;
-            background-color: cadetblue;
+            width: 400px; /* largura */
+            height: 120px; /* altura */
+            background-color: cadetblue; /* altera a cor de fundo do site/borda */
             margin-bottom: 10px;
-            overflow: scroll;
+            overflow: scroll; /* caixa de rolagem */
         }
+
+        .color-container1{
+            color: white; /* color sempre vai ser a coloração das letras */
+        }
+
+        .conteudo{
+            color: white;
+            height: 2000px; /* Exemplo de conteúdo grande para testar rolagem */
+            padding: 200px; /* cria um espaçamento entre os elementos */
+        }
+
+        .rodape{
+            position: fixed;
+            bottom: 0; /* fixa na parte de baixo */
+            left: 0;  /* inicia no canto esquerdo */
+            width: 100%; /* ocupa toda a largura da tela */
+            background-color: black;
+            text-align: center; /* alinha os elementos no centro da tela */
+        }
+       
+
 
     </style>
 </head>
@@ -139,11 +158,28 @@
   <p>  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae et amet commodi assumenda eaque quas ab aperiam obcaecati minima neque quia inventore accusantium, tenetur dolores nemo fugiat ad, aliquam sit? </p>
   </Div>
 
-
+<div class="color-container1">
   <h1>Exemplo: top,right,bottom,left</h1>
-  <div class="container">
+  <div class="container1">
+    <main>
     <div class="caixa3"> Caixa 3 (top, left)</div>
     <div class="caixa4"> Caixa 4 (bottom, right)</div>
+</div>
   </div>
+</main>
+  <div class="conteudo">
+<p> conteúdo que vai aparecer na tela </p>
+<p> conteúdo que vai aparecer na tela </p>
+<p> conteúdo que vai aparecer na tela </p>
+<p> conteúdo que vai aparecer na tela </p>
+<p> conteúdo que vai aparecer na tela </p>
+ 
+
+  <footer class="rodape">
+  &copy; Meu rodape 2025
+  </footer>
+
+</div>
+
 </body>
 </html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montando Container</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #cabecalho{
+            color: white;
+            display: flex;
+            justify-content: space-between; /* adiciona espaçamento entre os elementos */
+            align-items: center;
+            padding: 20px 15px;
+        }
+
+        .logotipo{
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .nav-links{
+            list-style: none;
+
+        }
+
+        .nav-links li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .nav-links li a:hover{
+            color: #6090d7;
+
+        }
+
+        li, a{
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        button{
+            color: black;
+            padding: 10px 20px;
+            background-color: #4771b0;
+            border: none;
+            border-radius: 60px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #39619c;
+        }
+
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* container ocupar toda a altura do site */
+        }
+
+        .principal{
+            flex: 1; /* empurra o footer lá pra baixo */
+            background: white; /* modifica o fundo do site */
+        }
+
+        .rodape{
+            background-color: black;
+            color: white; /* color sempre vai ser a coloração das letras */
+            padding: 15px;
+            text-align: center; /* centraliza os elementos no meio */
+            width: 100%; /* ocupa toda a largura da tela */
+            position: fixed;
+            bottom: 0; /* fixa na parte de baixo */
+            left: 0;  /* inicia no canto esquerdo */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header id="cabecalho">
+            <span class="logotipo"> Dev. </span>
+            <nav>
+                <ul class="nav-links">
+                    <li> <a href="#">Serviços</a> </li>
+                    <li> <a href="#">Projetos</a> </li>
+                    <li> <a href="#">Contato</a> </li>
+                    <li> <a href="#">Quem somos nós?</a> </li>
+                </ul>
+            </nav>
+            <a href="#">
+                <button>
+                     Entrar
+                </button>
+            </a>
+        </header>
+
+    <main class="principal">
+        <div>
+            <h1> Aqui é o h1 </h1>
+            <p> aqui é o p. </p>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        &copy;- Todos os Direitos Reservados!
+    </footer>
+
+    </div>
+</body>
+</html>

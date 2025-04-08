@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercício 07/04/25 </title>
+    <style>
+       body{
+        box-sizing: border-box;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+   
+    #cabecalho{
+         color: white;
+         display: flex;
+         justify-content: space-between;  /* adiciona espaçamento entre os elementos */
+         align-items: center; /* alinha os elementos no centro */
+         padding: 20px 15px;
+        }
+
+        .logotipo{
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .nav-links{
+            list-style: none;
+        }
+
+        .nav-links li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .nav-links li a:hover{
+           color: aqua;
+        }
+
+        li, a{
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none; /* remove o underline dos links */
+        }
+
+        button{
+            color: black;
+            padding: 10px 20px;
+            background-color: blue;
+            border: none;
+            border-radius: 60px;  /* arredonda o raio das bordas dos elementos */
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: aqua;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* container ocupar toda a altura do site */
+        }
+
+        .principal{
+            flex: 1;  /* empurra o footer lá pra baixo */
+            background: white;  /* modifica o fundo do site */
+        }
+
+        .rodape{
+            background-color: black;
+            color: white;  /* color sempre vai ser a coloração das letras */
+            padding: 15px;
+            text-align: center; /* centraliza os elementos no meio */
+            width: 100%; /* ocupa toda a largura da tela */
+            position: fixed; 
+            bottom: 0; /* fixa na parte de baixo */
+            left: 0;  /* inicia no canto esquerdo */
+        }
+
+    
+    </style>
+</head>
+<body>
+
+ <div class="container">
+
+    <header id="cabecalho">
+      <span class="logotipo"> Exercício Cabeçalho e Rodapé </span>
+        
+      <nav>
+         <ul class="nav-links">
+            <li> <a href="#"> Início </a>   </li>
+            <li> <a href="#"> Sobre </a>    </li>
+            <li> <a href="#"> Serviços </a> </li>
+            <li> <a href="#"> Contato </a>  </li>
+         </ul>
+      </nav>
+
+      <a href="#">
+        <button> Entrar </button>
+      </a>
+
+    </header>
+
+    <main class="principal">
+        <div>
+            <h1> Conteúdo do Site </h1>
+            <p> Aqui vem o Conteúdo </p>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        Todos os Direitos Reservados  2025 -  &copy;
+    </footer>
+
+ </div>  
+ 
+</body>
+</html>

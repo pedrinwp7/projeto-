@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu lateral</title>
+    <style>
+
+        body{
+            margin: 0; /* remover a margem */
+            font-family: Arial, Helvetica, sans-serif; /* modifica a fonte para arial */
+        }
+
+        .menu{
+         width: 200px; /* cria a largura da caixa */
+         background-color: black; /* cria a caixa preta */
+         padding-top: 20px; /* distanciar do topo */
+         height: 100vh; /* ocupa toda a div na vertical */
+         position: fixed; /* fixa a posição */
+         top: 0; /* fixa no topo */
+         left: 0; /* fixa na esquerda */
+        }
+
+        .menu a{
+            display: block; /* alinha um abaixo do outro */
+            color: white; /* muda a cor da letra */
+            padding: 14px 20px; /* cria espaçamento entre os elementos */
+            text-decoration: none; /* remove o underline dos links */
+            border-bottom: 1px solid #444; /* adiciona borda apenas na parte de baixo */
+        }
+
+        .menu a:hover{
+            background-color: #444; /* adiciona a cor que vai brilhar quando o mouse passar em cima */
+            color: forestgreen; /* muda a cor da letra quando o mouse passar em cima */
+        }
+
+        main{
+            margin-left: 220px; /* adiciona margem à esquerda */
+            padding: 20px; /* cria espaçamento entre os elementos */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+       
+        <nav class="menu">
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1> Bem-Vindo ao meu site. </h1>
+        <p>Este é um exemplo de menu lateral, na vertical.</p>
+    </main>
+    
+</body>
+</html>

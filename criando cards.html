@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Card</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(imagem-de-fundo.png);
+            background-repeat: none;
+            background-size: cover;
+        }
+
+        .container{
+            display: flex;
+            gap: 20px; /* cria espaçamento entre os cards no container */
+        }
+
+        .card1{
+            background-color: aquamarine;
+            border-radius: 12px; /* cria borda */
+            box-shadow: 0 4px 10px black; /* cria uma ilusão de profundidde na borda */
+            overflow: hidden;
+            width: 250px;
+            transition: transform 0.3s; /* cria transição */
+        }
+
+        .card2{
+            background-color: cornflowerblue;
+            border-radius: 12px; /* cria borda */
+            box-shadow: 0 4px 10px black; /* cria uma ilusão de profundidde na borda */
+            overflow: hidden;
+            width: 250px;
+            transition: transform 0.3s; /* cria transição */
+        }
+
+        .card3{
+            background-color: darkslateblue;
+            border-radius: 12px; /* cria borda */
+            box-shadow: 0 4px 10px black; /* cria uma ilusão de profundidde na borda */
+            overflow: hidden;
+            width: 250px;
+            transition: transform 0.3s; /* cria transição */
+        }
+
+        .card1:hover{
+            transform: translateY(-10px); /* animação da transição */
+        }
+
+        .card2:hover{
+            transform: translateY(-10px); /* animação da transição */
+        }
+
+        .card3:hover{
+            transform: translateY(-10px); /* animação da transição */
+        }
+
+        .card-content{
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3{
+            margin: 10px 0;
+        }
+
+        .card-content p{
+            color: black;
+            font-size: 14px;
+        }
+
+        .btn{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s; /* cria uma transição ao passar o mouse dentro do botão */
+        }
+
+        .btn:hover{
+            background-color: royalblue; /* animação da transição */ 
+        }
+
+        .card1 img{
+            width: 100%; /* faz a imagem ocupar 100% da largura */ 
+            height: 200px; /* faz a imagem ocupar determinados px de altura */
+            object-fit: cover; /* preenche tudo */
+        }
+
+        .card2 img{
+            width: 100%;  /* faz a imagem ocupar 100% da largura */ 
+            height: 200px; /* faz a imagem ocupar determinados px de altura */
+            object-fit: cover; /* preenche tudo */
+        }
+
+        .card3 img{
+            width: 100%; /* faz a imagem ocupar 100% da largura */ 
+            height: 200px; /* faz a imagem ocupar determinados px de altura */
+            object-fit: cover; /* preenche tudo */
+        }
+
+        .card1:not(:hover){
+            opacity: 0.6; /* diminui a opacidade do elemento e ascende quando passa o mouse em cima */
+        }
+
+        .card2:not(:hover){  /* diminui a opacidade do elemento e ascende quando passa o mouse em cima */
+            opacity: 0.6;
+        }
+
+        .card3:not(:hover){  /* diminui a opacidade do elemento e ascende quando passa o mouse em cima */
+            opacity: 0.6;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<!--Card 1-->
+        <div class="card1">
+          <img src="setup-hotwheels_1.png" alt="setup simples">  
+            <div class="card-content">
+                <h3>Pacote Básico</h3>
+                <p>Ideal para lisos</p>
+                <h4>R$ 129,90</h4>
+                <a href="#" class="btn">Assinar</a>  
+            </div>
+        </div>
+<!--Card 2-->
+        <div class="card2">
+          <img src="setup-home-office_1.png" alt="setup home office">  
+            <div class="card-content">
+                <h3>Pacote Officer</h3>
+                <p>Ideal para quem trabalha home office.</p>
+                <h4>R$ 2.899,90</h4>
+                <a href="#" class="btn">Assinar</a>  
+            </div>
+        </div>
+<!--Card 3-->
+        <div class="card3">
+          <img src="setup-gamer.png" alt="setup gamer">  
+            <div class="card-content">
+                <h3>Pacote Premium</h3>
+                <p>Ideal para quem deseja jogar.</p>
+                <h4>R$ 8.999,90</h4>
+                <a href="#" class="btn">Assinar</a>  
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
